@@ -5,11 +5,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-public class HomeController {
+public class UserController {
 	
-	@RequestMapping("/")
-	public String showHome() {
-		
-		return "home";
-	}	
+	@RequestMapping("/login")
+	public String showLogin() {
+		return "login";
+	}
+	
+	@RequestMapping("/loggedout")
+	public String showLogout() {
+		return "loggedout";
+	}
 }
